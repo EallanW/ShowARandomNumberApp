@@ -15,7 +15,9 @@ If you want to build or test it in gradle, please prepare Gradle 5 (5.6.x only) 
 The way to build:  
 1 go to the root folder  
 2 type the line below in Window cmd:  
-gradle release
+gradle release  
+3 the jar file is in this folder:  
+build/libs
 
 The way to test:  
 1 go to the root folder  

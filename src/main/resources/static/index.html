@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Show a random decimal with 8 precision every seconds</title>
+</head>
+<body>
+
+<p id="randomNumber"></p>
+
+<script>
+window.onload = function(){
+	setInterval(
+	function(){
+		document.getElementById("randomNumber").innerHTML = getRandomNumber();
+	}, 1000);
+}
+
+function getRandomNumber() {
+	return (Math.random()*Math.pow(10, 8)).toFixed(8);
+}
+</script>
+
+</body>
+</html>
